@@ -28,109 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.lblTexto = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtEscribir = new System.Windows.Forms.TextBox();
+            this.lblEscribir = new System.Windows.Forms.Label();
+            this.lblTransformacion = new System.Windows.Forms.Label();
+            this.optAzul = new System.Windows.Forms.RadioButton();
+            this.optRojo = new System.Windows.Forms.RadioButton();
+            this.btnAsignar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // radioButton1
+            // txtEscribir
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(186, 120);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.txtEscribir.Location = new System.Drawing.Point(17, 38);
+            this.txtEscribir.Name = "txtEscribir";
+            this.txtEscribir.Size = new System.Drawing.Size(200, 22);
+            this.txtEscribir.TabIndex = 0;
+            this.txtEscribir.TextChanged += new System.EventHandler(this.txtEscribir_TextChanged);
             // 
-            // radioButton2
+            // lblEscribir
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(95, 120);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.lblEscribir.AutoSize = true;
+            this.lblEscribir.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEscribir.Location = new System.Drawing.Point(12, 9);
+            this.lblEscribir.Name = "lblEscribir";
+            this.lblEscribir.Size = new System.Drawing.Size(95, 26);
+            this.lblEscribir.TabIndex = 1;
+            this.lblEscribir.Text = "Escribir:";
             // 
-            // radioButton3
+            // lblTransformacion
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(277, 176);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 8;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.lblTransformacion.AutoSize = true;
+            this.lblTransformacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTransformacion.Location = new System.Drawing.Point(56, 78);
+            this.lblTransformacion.Name = "lblTransformacion";
+            this.lblTransformacion.Size = new System.Drawing.Size(148, 25);
+            this.lblTransformacion.TabIndex = 2;
+            this.lblTransformacion.Text = "Transformacion";
+            this.lblTransformacion.Click += new System.EventHandler(this.lblTransformacion_Click);
             // 
-            // radioButton4
+            // optAzul
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(95, 176);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 9;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.optAzul.AutoSize = true;
+            this.optAzul.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optAzul.Location = new System.Drawing.Point(33, 140);
+            this.optAzul.Name = "optAzul";
+            this.optAzul.Size = new System.Drawing.Size(63, 24);
+            this.optAzul.TabIndex = 3;
+            this.optAzul.TabStop = true;
+            this.optAzul.Text = "Azul";
+            this.optAzul.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // optRojo
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(186, 176);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(85, 17);
-            this.radioButton5.TabIndex = 10;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.optRojo.AutoSize = true;
+            this.optRojo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optRojo.Location = new System.Drawing.Point(156, 140);
+            this.optRojo.Name = "optRojo";
+            this.optRojo.Size = new System.Drawing.Size(64, 24);
+            this.optRojo.TabIndex = 4;
+            this.optRojo.TabStop = true;
+            this.optRojo.Text = "Rojo";
+            this.optRojo.UseVisualStyleBackColor = true;
             // 
-            // lblTexto
+            // btnAsignar
             // 
-            this.lblTexto.AutoSize = true;
-            this.lblTexto.Location = new System.Drawing.Point(92, 51);
-            this.lblTexto.Name = "lblTexto";
-            this.lblTexto.Size = new System.Drawing.Size(34, 13);
-            this.lblTexto.TabIndex = 11;
-            this.lblTexto.Text = "Texto";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(95, 81);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 12;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(287, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAsignar.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAsignar.Location = new System.Drawing.Point(40, 179);
+            this.btnAsignar.Name = "btnAsignar";
+            this.btnAsignar.Size = new System.Drawing.Size(164, 52);
+            this.btnAsignar.TabIndex = 5;
+            this.btnAsignar.Text = "Asignar";
+            this.btnAsignar.UseVisualStyleBackColor = true;
+            this.btnAsignar.Click += new System.EventHandler(this.btnAsignar_Click);
             // 
             // Formulario2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblTexto);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.ClientSize = new System.Drawing.Size(275, 256);
+            this.Controls.Add(this.btnAsignar);
+            this.Controls.Add(this.optRojo);
+            this.Controls.Add(this.optAzul);
+            this.Controls.Add(this.lblTransformacion);
+            this.Controls.Add(this.lblEscribir);
+            this.Controls.Add(this.txtEscribir);
             this.Name = "Formulario2";
             this.Text = "Formulario2";
             this.ResumeLayout(false);
@@ -140,13 +120,11 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.Label lblTexto;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtEscribir;
+        private System.Windows.Forms.Label lblEscribir;
+        private System.Windows.Forms.Label lblTransformacion;
+        private System.Windows.Forms.RadioButton optAzul;
+        private System.Windows.Forms.RadioButton optRojo;
+        private System.Windows.Forms.Button btnAsignar;
     }
 }

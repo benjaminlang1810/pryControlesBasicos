@@ -16,5 +16,30 @@ namespace pryControlesBasicos
         {
             InitializeComponent();
         }
+
+        private void lblTransformacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAsignar_Click(object sender, EventArgs e)
+        {
+            if (optRojo.Checked == true)
+            {
+                lblTransformacion.ForeColor = Color.Red;
+                txtEscribir.ForeColor = Color.Red;
+            }
+
+            if (optAzul.Checked == true)
+            {
+                lblTransformacion.ForeColor = Color.Blue;
+                txtEscribir.ForeColor = Color.Blue;
+            }
+        }
+
+        private void txtEscribir_TextChanged(object sender, EventArgs e)
+        {
+            lblTransformacion.Text= txtEscribir.Text;   
+        }
     }
 }
